@@ -1,0 +1,43 @@
+.img-bg1{
+    background-color:#ffffff21; 
+    border-radius: 2rem;
+    text-align: center;
+ 
+
+}
+.img-bg1 img{
+    width: 140px;
+    border-radius: 50%;
+    height: 150px;
+    background-origin: padding-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 13px;
+}
+
+.social-media{
+    
+    display: flex;
+    bottom: 25px;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+     
+
+}
+.member{
+   text-align: center;
+   padding: 40px;
+}
+.text1{
+    top: 50%;
+    left: 45%;
+    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.text1 h1{
+    font-weight: 700;
+}
+
+

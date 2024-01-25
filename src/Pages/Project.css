@@ -1,0 +1,82 @@
+/* img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  } */
+
+  /* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	top: 0;
+	left: 0;
+    color: cornSilk;
+    text-align: center;
+    box-shadow: -5px 5px 5px #aaa;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  background: cornflowerBlue;
+}
+
+/* back, initially hidden pane */
+.back {
+    position: absolute;
+	transform: rotateY(180deg);
+  background: crimson;
+}
+.front img{
+    width: 100%;
+}
+.back img{
+    width: 100%
+}
+
+
+
+/* <img
+src="./assets/africanWomen.png"
+alt="responsive img"
+></img>
+<img
+src="./assets/dirty_mythological.png"
+alt="responsive img"
+></img>
+<img
+src="./assets/africanWomen.1.jpg"
+alt="responsive img"
+></img> */
+
+
+/* <img
+src="./assets/africanWomen.png"
+alt="responsive img"
+></img>
+<img
+src="./assets/dirty_mythological.png"
+alt="responsive img"
+></img>
+<img
+src="./assets/africanWomen.1.jpg"
+alt="responsive img"
+></img> */
